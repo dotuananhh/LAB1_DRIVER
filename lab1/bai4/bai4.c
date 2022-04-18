@@ -32,7 +32,7 @@ static int md_init(void)
     }
     for (i = 1; i < arr_length; i++)
     {
-        arr[i] = ucln(arr[i - 1], arr[i]);
+        arr[i] = UCLN(arr[i - 1], arr[i]);
     }
     printk("ucln cua mang la: %d\n", arr[arr_length - 1]);
     return 0;
